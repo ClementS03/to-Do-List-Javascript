@@ -65,6 +65,7 @@ var app = {
     checkbox.type = 'checkbox';
     checkbox.className = 'taskCheckbox';
     checkbox.id = id;
+    checkbox.addEventListener('change', app.handleChange);
 
     // Create Label
     const label = document.createElement('label');
@@ -91,6 +92,20 @@ var app = {
       event.target.children[0].value = "";
     } else {
       console.log('Attention le champ est vide !!');
+    }
+  },
+
+  handleChange: function (event) {
+    // event.target.closest('li').classList.toggle('taskContainer--done');
+
+    if (event.target.checked) {
+      event.target.closest('li').classList.add('taskContainer--done');
+      app.count -= 1;
+      app.setCounterValue();
+    } else {
+      event.target.closest('li').classList.remove('taskContainer--done');
+      app.count += 1;
+      app.setCounterValue();
     }
   }
 };

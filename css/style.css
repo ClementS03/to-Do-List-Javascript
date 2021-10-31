@@ -49,6 +49,11 @@ body {
     border-radius: 5px;
 }
 
+.taskContainer--done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
 .taskCheckbox {
     margin-right: 0.5em;
     vertical-align: middle;
