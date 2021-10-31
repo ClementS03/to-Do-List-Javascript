@@ -96,7 +96,6 @@ var app = {
   },
 
   handleChange: function (event) {
-    // event.target.closest('li').classList.toggle('taskContainer--done');
 
     if (event.target.checked) {
       event.target.closest('li').classList.add('taskContainer--done');
@@ -107,6 +106,7 @@ var app = {
       app.count += 1;
       app.setCounterValue();
     }
+
   }
 };
 
