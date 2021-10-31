@@ -76,6 +76,9 @@ var app = {
     taskContainer.appendChild(label);
 
     app.ul.appendChild(taskContainer);
+
+    app.count += 1;
+    app.setCounterValue();
   },
 
   handleSubmit: function (event) {
