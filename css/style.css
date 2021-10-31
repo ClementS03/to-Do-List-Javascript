@@ -32,6 +32,7 @@ body {
 }
 
 .counter {
+    text-align: center;
     color: #fff;
     margin: 1.5em 0;
     font-weight: bold;
@@ -49,7 +50,10 @@ body {
 }
 
 .taskCheckbox {
+    margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 .taskLabel {
+    vertical-align: middle;
 }
